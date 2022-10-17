@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import UseTitle from '../../componentes/UseTitle';
 
 const divStyle= {color: 'red' , height:30};
 const props =()=>{
@@ -23,6 +24,8 @@ function Home(props:any) {
   const onButtonClick=()=>{
     inputRef.current;
   }
+
+  UseTitle('You clicked ${count} times')
   return (
     <div style={divStyle}>Home Bienvenido {props.user} {lastname}
     <p>Counter ={count}</p>
