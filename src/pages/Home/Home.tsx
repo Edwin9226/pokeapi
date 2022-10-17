@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import UseTitle from '../../componentes/UseTitle';
+import { MyList } from './componente/MyList';
 
 const divStyle= {color: 'red' , height:30};
 const props =()=>{
@@ -37,6 +38,7 @@ function Home(props:any) {
     <button onClick={ () => inputRef.current}>
       Focus Input
     </button>
+    <MyList/>
     </div>
     
     )
