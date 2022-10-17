@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import UseTitle from '../../componentes/UseTitle';
+import { MyForm } from './componente/MyForm';
 import { MyList } from './componente/MyList';
 import { MyTable } from './componente/MyTable';
 
@@ -41,6 +42,7 @@ function Home(props:any) {
     </button>
     <MyList/>
     <MyTable/>
+    <MyForm/>
     </div>
     
     )
