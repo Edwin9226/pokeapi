@@ -1,13 +1,11 @@
+import React, {memo} from 'react'
 
-import React, { Fragment } from 'react';
-import './styles/index';
-
-interface IHeaderTextProps {
-
+function HeaderText(props:any) {
+  return (
+    <h1>
+        {props.text}
+    </h1>
+  )
 }
 
-const HeaderText: React.SFC<IHeaderTextProps> = (props) => {
-    return <Fragment></Fragment>;
-}
-
-export default HeaderText;
+export default memo(HeaderText);
