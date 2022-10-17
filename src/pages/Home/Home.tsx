@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const divStyle= {color: 'red' , height:30};
-function Home() {
+const props =()=>{
+  user:String;
+  lastname: String;
+}
+
+
+function Home(props:any) {
+  const [lastname, setLastname] = useState('Pinchao');
   return (
-    <div style={divStyle}>Home Bienvenido</div>
+    <div style={divStyle}>Home Bienvenido {props.user} {lastname}</div>
   )
 }
 

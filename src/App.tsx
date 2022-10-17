@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <h1>Hello world.</h1>
       <h2>Tis is my first component.</h2>
-      <Home/>
+      <Home user="Edwin" lastname="Rosero"/>
     </div>
   )
 }
