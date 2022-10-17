@@ -14,3 +14,8 @@ Hoooks:
 
 ** useEffect
 useEffect(callback, [dependencies])
+useEffect(callback, [empty])// solo se emjecuta una vez
+
+
+** useRef
+const ref = useRef(initialValue)
