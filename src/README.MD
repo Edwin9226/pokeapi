@@ -8,3 +8,9 @@ http://localhost:5173/
 
 useState [name,update_value]
 const [state, setState] = React.useState(intialValue);
+
+Hoooks:
+** useState
+
+** useEffect
+useEffect(callback, [dependencies])
