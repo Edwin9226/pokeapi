@@ -1,13 +1,25 @@
+import React from 'react'
 
-import React, { Fragment } from 'react';
-import './styles/index';
-
-interface IMyTableProps {
-
+function MyTable() {
+    const data=[
+        {brand: 'Ford', model:'Mustang'},
+        {brand: 'VW', model:'Beetle'},
+        {brand: 'Tesla', model:'Model S'},
+    ];
+  return (
+    <div><table>
+        <tbody>
+            {
+                data.map((item, index)=>
+                <tr key={index}>
+                    <td>{item.brand}</td>
+                    <td>{item.model}</td>
+                </tr>
+                )
+            }
+        </tbody>
+        </table></div>
+  )
 }
 
-const MyTable: React.SFC<IMyTableProps> = (props) => {
-    return <Fragment></Fragment>;
-}
-
-export default MyTable;
+export default MyTable

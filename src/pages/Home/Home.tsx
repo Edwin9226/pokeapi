@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import UseTitle from '../../componentes/UseTitle';
 import { MyList } from './componente/MyList';
+import { MyTable } from './componente/MyTable';
 
 const divStyle= {color: 'red' , height:30};
 const props =()=>{
@@ -39,6 +40,7 @@ function Home(props:any) {
       Focus Input
     </button>
     <MyList/>
+    <MyTable/>
     </div>
     
     )

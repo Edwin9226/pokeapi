@@ -1,3 +1,1 @@
-
-import MyTable from './MyTable';
-export default MyTable;    
+export { default as MyTable } from './MyTable';
